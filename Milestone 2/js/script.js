@@ -32,8 +32,13 @@ const team = [
     },
 ];
 
+const lista = document.querySelector('.lista');
+
 for(let indice in team){
     const member = team[indice];
-    const output = `${member.nome} - ${member.role} - ${member.profile}`;
+    const output = `<li>${member.nome}</li>
+    <li>${member.role}</li>
+    <li>${member.profile}</li>`;
     console.log(output);
+    lista.innerHTML  += output;
 }
