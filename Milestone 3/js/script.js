@@ -32,10 +32,15 @@ const team = [
     },
 ];
 
+// prendo la row dove andrò ad inserire la card
 const lista = document.querySelector('.row');
 
+
+// stampo le informazioni della banca dati
 for(let indice in team){
+
     const member = team[indice];
+    // creo la constante output inserendo i vari valori 
     const output = `
 <div class="col-lg-4 col-sm-6 py-4">
         <div class="card overflow-hidden" style="width: 18rem;">
@@ -48,7 +53,10 @@ for(let indice in team){
             </div>
         </div>
 </div>`;
+// verifiico 
     console.log(output);
+
+    // stampo in pagina con progressione tutta la mia banca dati
     lista.innerHTML  += output;
 }
 
