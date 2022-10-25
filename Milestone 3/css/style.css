@@ -1,0 +1,27 @@
+/* 
+Utilizzando i dati forniti, creare un array di oggetti per rappresentare i membri del team.
+Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
+
+**MILESTONE 3:**
+Stampare delle card formattate contenete immagini e testo (La grafica fornita è solo un esempio ma sentitevi liberi di impaginare come preferite)
+**BONUS:**
+Aggiungere degli aggettivi (più di uno) che identifichino ogni persona e stamparli nella card
+**Consigli del giorno:**
+Ragioniamo come sempre a step.
+Prima la logica in italiano e poi traduciamo in codice.
+ */
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card-img-top{
+    transition: transform 1s, filter 2s ease-in-out;
+    filter: blur(1px);
+    transform: scale(1.4);
+}
+.card-img-top:hover{
+    filter: blur(0);
+    transform: scale(1);
+}
+
