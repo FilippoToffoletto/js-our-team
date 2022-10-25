@@ -1,5 +1,5 @@
 // banca dati
-const teams = [
+const team = [
     {
         nome : 'Wayne Barnett',
         role : 'Founder & CEO',
@@ -32,4 +32,8 @@ const teams = [
     },
 ];
 
-console.log(teams);
+for(let indice in team){
+    const member = team[indice];
+    const output = `${member.nome} - ${member.role} - ${member.profile}`;
+    console.log(output);
+}
